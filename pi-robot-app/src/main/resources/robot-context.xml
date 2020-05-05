@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<!--
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.robot.*"/>
+
+    <context:property-placeholder location="classpath*:application.properties"/>
+
+    <bean id="servoSg90horizontal" class="com.robot.servo.MicroServoSG90">
+        <property name="servoPin" value="GPIO 7"/>
+        <property name="calibrationDegree" value="-6"/>
+        <property name="initialPosition" value="90"/>
+    </bean>
+
+    <bean id="servoSg90vertical" class="com.robot.servo.MicroServoSG90">
+        <property name="servoPin" value="GPIO 15"/>
+        <property name="calibrationDegree" value="0"/>
+        <property name="initialPosition" value="90"/>
+    </bean>
+
+    <bean id="motorDcLeftWheel" class="com.robot.motor.MotorDc">
+        <property name="motorPwm" value="GPIO 27"/>
+        <property name="motorDir" value="GPIO 28"/>
+    </bean>
+
+    <bean id="motorDcRightWheel" class="com.robot.motor.MotorDc">
+        <property name="motorPwm" value="GPIO 24"/>
+        <property name="motorDir" value="GPIO 25"/>
+    </bean>
+
+    <bean id="motorStopListener" class="com.robot.motor.MotorDcStopListener"/>
+
+    <bean id="motorObservers" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                &lt;!&ndash;<ref bean="motorStopListener"/>&ndash;&gt;
+                <ref bean="frontMoveDetector"/>
+                &lt;!&ndash;<ref bean="moveDetectorBack"/>&ndash;&gt;
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="frontMoveDetector" class="com.robot.detector.MoveDetectorImpl">
+        <property name="movePin" value="${pin.move.detector}"/>
+    </bean>
+
+
+
+    &lt;!&ndash;<bean id="moveDetectorBack" clacom.robot.detector.MoveDetectorImplImplctor">&ndash;&gt;
+        &lt;!&ndash;<property name="movePin" value="${pin.move.detector.back}"/>&ndash;&gt;
+    &lt;!&ndash;</bean>&ndash;&gt;
+
+    <bean id="temperatureSensor" class="com.robot.sensor.DHT22SensorReader">
+        <constructor-arg>
+            <value>2</value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="distanceDetector" class="com.robot.detector.DistanceDetector">
+        <property name="echoPin" value="${pin.distance.detector.echo}"/>
+        <property name="triggerPin" value="${pin.distance.detector.trigger}"/>
+    </bean>
+
+    <bean id="ledLight" class="com.robot.led.LedLight">
+        <property name="pinBlue" value="${pin.distance.led.blue}"/>
+        <property name="pinGreen" value="${pin.distance.led.green}"/>
+    </bean>
+
+    <bean id="robotJobScheduler" class="com.robot.job.RobotJobScheduler">
+        <property name="detectors">
+            <list>
+                <ref bean="temperatureServiceImpl"/>
+                <ref bean="frontMoveDetector"/>
+            </list>
+        </property>
+    </bean>
+
+    &lt;!&ndash; DB &ndash;&gt;
+    <bean id="weatherDb" class="com.robot.db.WeatherDb"/>
+    <bean id="propertiesDb" class="com.robot.db.PropertiesDb"/>
+-->
+
+</beans>
