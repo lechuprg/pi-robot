@@ -3,6 +3,8 @@
 Project contains code samples for integration of multiple external devices with raspberry pi platform.
 All code is written in Java 8.
 
+YouTube link: https://www.youtube.com/watch?v=_jniu6XSi1k
+
 Base modules integration:
  - servo: SG90Servo
  - HG7881 dual  motor drive with any dc motor
